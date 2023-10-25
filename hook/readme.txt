@@ -1,0 +1,1 @@
+Pour utiliser le hook de ce dossier le copier dans le dossier .git/hooks

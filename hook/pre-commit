@@ -1,0 +1,23 @@
+# Add this file on your .git/hooks/ and name it as 'pre-commit'
+#
+# The name of a database user with read access to the database.
+
+# The password associated with the above user. Leave commented if none.
+
+# The database associated with this repository.
+DBNAME=commitInfo
+# The path relative to the repository root in which to store the sql dump.
+DBPATH=suivi/commitInfo.txt
+read -p "Créer un fichier de ce commit (y/[n]) ?" yn < /dev/tty
+yn=${yn:n}
+case $yn in
+    [Yy]* )
+        echo mysqldump 'date' > $DBPATH/$DBNAME.txt
+        mysqldump 'date' > $DBPATH/$DBNAME.txt
+        git add $DBPATH/$DBNAME.txt
+        exit 0;;
+    [Nn]* )
+        exit 0;;
+esac
+exit 0
+
