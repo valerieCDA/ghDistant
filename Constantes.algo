@@ -1,3 +1,4 @@
 Constantes {
- constante HELLO_WORLD = « Hello world »
+ constante HELLO_WORLD_TITLE = « Titre Hello world »
+ constante HELLO_WORLD_TEXT = « Texte Hello world »
  }
