@@ -6,8 +6,10 @@ Algo HelloWorld {
 
  Créer une fenetre de titre HELLO_WORLD
 Mettre la dimension à 200, 200
+<<<<<<< HEAD
 Créer la couleur rose
 Mettre la couleur rose sur la fenetre
+
 
 Configurer la fenetre sur ‘exitOnClose’
 // Création du label de texte
